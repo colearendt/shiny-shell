@@ -15,6 +15,7 @@ ui <- fluidPage(
          "Enjoy a shell where you ought not have one!"
          , textInput('command', label='Enter Command')
          , actionButton('execute', label='Run!')
+         , textInput('envir', label='Enter name=value pairs to set environment variables (quoting is weird)')
          , verbatimTextOutput("text")
       )
    )
@@ -34,11 +35,14 @@ server <- function(input, output) {
          command <- input$command
          args <- character()
        }
+       envir <- input$envir
        print(sprintf('Command: %s',command))
        print(sprintf('Args: %s',args))
+       print(sprintf('Env: %s', envir))
        returnval <- system2(command=command, args=args
                            , stdout=TRUE
-                           , stderr=TRUE)
+                           , stderr=TRUE
+                           , env = envir)
        
        return(paste(returnval,collapse='\n'))
      }
