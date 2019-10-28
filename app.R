@@ -2,7 +2,7 @@ library(shiny)
 library(stringr)
 
 # package for testing
-library(odbc)
+#library(odbc)
 
 ui <- fluidPage(
    
