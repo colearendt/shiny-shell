@@ -82,34 +82,6 @@
         "Built": "R 3.6.3; x86_64-apple-darwin15.6.0; 2020-05-09 14:31:07 UTC; unix"
       }
     },
-    "askpass": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "askpass",
-        "Type": "Package",
-        "Title": "Safe Password Entry for R, Git, and SSH",
-        "Version": "1.1",
-        "Authors@R": "person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), \n    email = \"jeroen@berkeley.edu\", comment = c(ORCID = \"0000-0002-4035-0289\"))",
-        "Description": "Cross-platform utilities for prompting the user for credentials or a \n    passphrase, for example to authenticate with a server or read a protected key.\n    Includes native programs for MacOS and Windows, hence no 'tcltk' is required. \n    Password entry can be invoked in two different ways: directly from R via the \n    askpass() function, or indirectly as password-entry back-end for 'ssh-agent' \n    or 'git-credential' via the SSH_ASKPASS and GIT_ASKPASS environment variables.\n    Thereby the user can be prompted for credentials or a passphrase if needed \n    when R calls out to git or ssh.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://github.com/jeroen/askpass#readme",
-        "BugReports": "https://github.com/jeroen/askpass/issues",
-        "Encoding": "UTF-8",
-        "LazyData": "true",
-        "Imports": "sys (>= 2.1)",
-        "RoxygenNote": "6.1.1",
-        "Suggests": "testthat",
-        "Language": "en-US",
-        "NeedsCompilation": "yes",
-        "Packaged": "2019-01-13 12:08:17 UTC; jeroen",
-        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>)",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
-        "Date/Publication": "2019-01-13 12:50:03 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-04-26 22:26:39 UTC; unix"
-      }
-    },
     "base64enc": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -156,36 +128,6 @@
         "Repository": "CRAN",
         "Date/Publication": "2017-09-16 19:49:46 UTC",
         "Built": "R 3.6.0; ; 2019-04-26 19:49:57 UTC; unix"
-      }
-    },
-    "curl": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "curl",
-        "Type": "Package",
-        "Title": "A Modern and Flexible Web Client for R",
-        "Version": "4.3",
-        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroen@berkeley.edu\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"ctb\"),\n    person(\"RStudio\", role = \"cph\")\n    )",
-        "Description": "The curl() and curl_download() functions provide highly\n    configurable drop-in replacements for base url() and download.file() with\n    better performance, support for encryption (https, ftps), gzip compression,\n    authentication, and other 'libcurl' goodies. The core of the package implements a\n    framework for performing fully customized requests where data can be processed\n    either in memory, on disk, or streaming via the callback or connection\n    interfaces. Some knowledge of 'libcurl' is recommended; for a more-user-friendly\n    web client see the 'httr' package which builds on this package with http\n    specific tools and logic.",
-        "License": "MIT + file LICENSE",
-        "SystemRequirements": "libcurl: libcurl-devel (rpm) or\nlibcurl4-openssl-dev (deb).",
-        "URL": "https://jeroen.cran.dev/curl (docs)\nhttps://github.com/jeroen/curl#readme (devel)\nhttps://curl.haxx.se/libcurl/ (upstream)",
-        "BugReports": "https://github.com/jeroen/curl/issues",
-        "Suggests": "spelling, testthat (>= 1.0.0), knitr, jsonlite, rmarkdown,\nmagrittr, httpuv (>= 1.4.4), webutils",
-        "VignetteBuilder": "knitr",
-        "Depends": "R (>= 3.0.0)",
-        "LazyData": "true",
-        "RoxygenNote": "7.0.1",
-        "Encoding": "UTF-8",
-        "Language": "en-US",
-        "NeedsCompilation": "yes",
-        "Packaged": "2019-12-02 12:33:03 UTC; jeroen",
-        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Hadley Wickham [ctb],\n  RStudio [cph]",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
-        "Date/Publication": "2019-12-02 14:00:03 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-12-03 15:59:32 UTC; unix"
       }
     },
     "digest": {
@@ -426,60 +368,6 @@
         "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2020-02-05 20:05:16 UTC; unix"
       }
     },
-    "openssl": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "openssl",
-        "Type": "Package",
-        "Title": "Toolkit for Encryption, Signatures and Certificates Based on\nOpenSSL",
-        "Version": "1.4.1",
-        "Authors@R": "c(person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroen@berkeley.edu\",\n    comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Oliver\", \"Keyes\", role = \"ctb\"))",
-        "Description": "Bindings to OpenSSL libssl and libcrypto, plus custom SSH key parsers.\n    Supports RSA, DSA and EC curves P-256, P-384, P-521, and curve25519. Cryptographic\n    signatures can either be created and verified manually or via x509 certificates. \n    AES can be used in cbc, ctr or gcm mode for symmetric encryption; RSA for asymmetric\n    (public key) encryption or EC for Diffie Hellman. High-level envelope functions \n    combine RSA and AES for encrypting arbitrary sized data. Other utilities include key\n    generators, hash functions (md5, sha1, sha256, etc), base64 encoder, a secure random\n    number generator, and 'bignum' math methods for manually performing crypto \n    calculations on large multibyte integers.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://github.com/jeroen/openssl#readme",
-        "BugReports": "https://github.com/jeroen/openssl/issues",
-        "SystemRequirements": "OpenSSL >= 1.0.1",
-        "VignetteBuilder": "knitr",
-        "Imports": "askpass",
-        "Suggests": "testthat, digest, knitr, rmarkdown, jsonlite, jose, sodium",
-        "RoxygenNote": "6.1.1",
-        "Encoding": "UTF-8",
-        "NeedsCompilation": "yes",
-        "Packaged": "2019-07-16 17:55:20 UTC; jeroen",
-        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Oliver Keyes [ctb]",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
-        "Date/Publication": "2019-07-18 06:35:27 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-07-19 16:45:40 UTC; unix"
-      }
-    },
-    "packrat": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "packrat",
-        "Type": "Package",
-        "Title": "A Dependency Management System for Projects and their R Package\nDependencies",
-        "Version": "0.5.0",
-        "Author": "Kevin Ushey, Jonathan McPherson, Joe Cheng, Aron Atkins, JJ Allaire",
-        "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
-        "Description": "Manage the R packages your project depends\n    on in an isolated, portable, and reproducible way.",
-        "License": "GPL-2",
-        "Depends": "R (>= 3.0.0)",
-        "Imports": "tools, utils",
-        "Suggests": "testthat (>= 0.7), devtools, httr, knitr, rmarkdown",
-        "URL": "https://github.com/rstudio/packrat/",
-        "BugReports": "https://github.com/rstudio/packrat/issues",
-        "RoxygenNote": "6.1.1",
-        "Encoding": "UTF-8",
-        "NeedsCompilation": "no",
-        "Packaged": "2018-11-13 23:16:36 UTC; kevin",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-11-14 08:40:02 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 20:23:04 UTC; unix"
-      }
-    },
     "promises": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -535,57 +423,6 @@
         "Repository": "RSPM",
         "Date/Publication": "2020-05-02 16:20:02 UTC",
         "Built": "R 3.6.3; x86_64-apple-darwin15.6.0; 2020-05-09 14:30:03 UTC; unix"
-      }
-    },
-    "rsconnect": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "rsconnect",
-        "Type": "Package",
-        "Title": "Deployment Interface for R Markdown Documents and Shiny\nApplications",
-        "Version": "0.8.16",
-        "Author": "JJ Allaire",
-        "Maintainer": "Jonathan McPherson <jonathan@rstudio.com>",
-        "Description": "Programmatic deployment interface for 'RPubs', 'shinyapps.io', and\n    'RStudio Connect'. Supported content types include R Markdown documents,\n    Shiny applications, Plumber APIs, plots, and static web content.",
-        "Depends": "R (>= 3.0.0)",
-        "Imports": "curl, digest, jsonlite, openssl, packrat (>= 0.4.8-1),\nrstudioapi (>= 0.5), yaml (>= 2.1.5)",
-        "Suggests": "RCurl, callr, httpuv, knitr, plumber (>= 0.3.2), reticulate,\nrmarkdown (>= 1.1), shiny, sourcetools, testthat, xtable",
-        "License": "GPL-2",
-        "RoxygenNote": "6.1.1",
-        "URL": "https://github.com/rstudio/rsconnect",
-        "BugReports": "https://github.com/rstudio/rsconnect/issues",
-        "NeedsCompilation": "no",
-        "Packaged": "2019-12-13 19:18:46 UTC; jmcphers",
-        "Repository": "RSPM",
-        "Date/Publication": "2019-12-13 20:00:02 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 3.6.3; ; 2020-05-08 12:35:20 UTC; unix"
-      }
-    },
-    "rstudioapi": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "rstudioapi",
-        "Title": "Safely Access the RStudio API",
-        "Description": "Access the RStudio API (if available) and provide informative error\n    messages when it's not.",
-        "Version": "0.11",
-        "Authors@R": "c(\n    person(\"Kevin\", \"Ushey\", role = c(\"aut\", \"cre\"), email = \"kevin@rstudio.com\"),\n    person(\"JJ\", \"Allaire\", role = c(\"aut\"), email = \"jj@rstudio.com\"),\n    person(\"Hadley\", \"Wickham\", role = c(\"aut\"), email = \"hadley@rstudio.com\"),\n    person(\"Gary\", \"Ritchie\", role = c(\"aut\"), email = \"gary@rstudio.com\"),\n    person(family = \"RStudio\", role = \"cph\")\n    )",
-        "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
-        "License": "MIT + file LICENSE",
-        "URL": "https://github.com/rstudio/rstudioapi",
-        "BugReports": "https://github.com/rstudio/rstudioapi/issues",
-        "RoxygenNote": "7.0.2",
-        "Suggests": "testthat, knitr, rmarkdown, clipr",
-        "VignetteBuilder": "knitr",
-        "Encoding": "UTF-8",
-        "NeedsCompilation": "no",
-        "Packaged": "2020-02-07 18:58:10 UTC; kevinushey",
-        "Author": "Kevin Ushey [aut, cre],\n  JJ Allaire [aut],\n  Hadley Wickham [aut],\n  Gary Ritchie [aut],\n  RStudio [cph]",
-        "Repository": "CRAN",
-        "Date/Publication": "2020-02-07 23:20:02 UTC",
-        "Built": "R 3.6.0; ; 2020-02-08 15:52:00 UTC; unix"
       }
     },
     "shiny": {
@@ -697,33 +534,6 @@
         "Built": "R 3.6.0; ; 2019-04-26 22:26:53 UTC; unix"
       }
     },
-    "sys": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "sys",
-        "Type": "Package",
-        "Title": "Powerful and Reliable Tools for Running System Commands in R",
-        "Version": "3.3",
-        "Authors@R": "c(person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), \n      email = \"jeroen@berkeley.edu\", comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = \"ctb\"))",
-        "Description": "Drop-in replacements for the base system2() function with fine control\n    and consistent behavior across platforms. Supports clean interruption, timeout, \n    background tasks, and streaming STDIN / STDOUT / STDERR over binary or text \n    connections. Arguments on Windows automatically get encoded and quoted to work \n    on different locales.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://github.com/jeroen/sys",
-        "BugReports": "https://github.com/jeroen/sys/issues",
-        "Encoding": "UTF-8",
-        "LazyData": "true",
-        "RoxygenNote": "6.1.1",
-        "Suggests": "unix (>= 1.4), spelling, testthat",
-        "Language": "en-US",
-        "NeedsCompilation": "yes",
-        "Packaged": "2019-08-21 11:45:42 UTC; jeroen",
-        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Gábor Csárdi [ctb]",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
-        "Date/Publication": "2019-08-21 14:20:02 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-08-22 13:40:46 UTC; unix"
-      }
-    },
     "xtable": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -748,29 +558,6 @@
         "Date/Publication": "2019-04-21 12:20:03 UTC",
         "Built": "R 3.6.0; ; 2019-04-26 19:49:57 UTC; unix"
       }
-    },
-    "yaml": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
-      "description": {
-        "Package": "yaml",
-        "Type": "Package",
-        "Title": "Methods to Convert R Data to YAML and Back",
-        "Date": "2020-01-23",
-        "Version": "2.2.1",
-        "Suggests": "RUnit",
-        "Author": "Jeremy Stephens [aut, cre], Kirill Simonov [aut], Yihui Xie [ctb],\n  Zhuoer Dong [ctb], Hadley Wickham [ctb], Jeffrey Horner [ctb], reikoch [ctb],\n  Will Beasley [ctb], Brendan O'Connor [ctb], Gregory R. Warnes [ctb]",
-        "Maintainer": "Jeremy Stephens <jeremy.f.stephens@vumc.org>",
-        "License": "BSD_3_clause + file LICENSE",
-        "Description": "Implements the 'libyaml' 'YAML' 1.1 parser and emitter\n  (<http://pyyaml.org/wiki/LibYAML>) for R.",
-        "URL": "https://github.com/viking/r-yaml/",
-        "BugReports": "https://github.com/viking/r-yaml/issues",
-        "NeedsCompilation": "yes",
-        "Packaged": "2020-01-30 20:29:56 UTC; stephej1",
-        "Repository": "CRAN",
-        "Date/Publication": "2020-02-01 05:50:02 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2020-02-02 13:10:02 UTC; unix"
-      }
     }
   },
   "files": {
@@ -786,9 +573,6 @@
     "out.rds": {
       "checksum": "e1db789f7cdfd47a9fa7de69f0213e08"
     },
-    "packrat/desc/askpass": {
-      "checksum": "94189e2591613758acecb70968843b7e"
-    },
     "packrat/desc/base64enc": {
       "checksum": "4968159e8f1ce5fdd79257f19560b1bd"
     },
@@ -797,9 +581,6 @@
     },
     "packrat/desc/crayon": {
       "checksum": "b24ecaa8a9670c0265dba74ec47767ba"
-    },
-    "packrat/desc/curl": {
-      "checksum": "45cb602c8e08497c7908de15290ce741"
     },
     "packrat/desc/digest": {
       "checksum": "cfdf99fa13a6c8c0af23140d3a6e8fd1"
@@ -828,12 +609,6 @@
     "packrat/desc/mime": {
       "checksum": "fa29cb5a42d6ee931779ae149d514c0f"
     },
-    "packrat/desc/openssl": {
-      "checksum": "b7e1b3b239f365ad2ca75a8a688df865"
-    },
-    "packrat/desc/packrat": {
-      "checksum": "0c9b4ac5c03c439b3da8bbbbc1f48247"
-    },
     "packrat/desc/promises": {
       "checksum": "c7e462b2e6c40d48d7cd94eae3543331"
     },
@@ -845,12 +620,6 @@
     },
     "packrat/desc/rlang": {
       "checksum": "f145f80745da1b0466479c62d0b81453"
-    },
-    "packrat/desc/rsconnect": {
-      "checksum": "36a94d09f4bf642f313393725fbac8f2"
-    },
-    "packrat/desc/rstudioapi": {
-      "checksum": "d53f2dd2206d0bae7e9569358ba48f32"
     },
     "packrat/desc/shiny": {
       "checksum": "7ccf3cde7109d127b958d94293a3c1d3"
@@ -864,23 +633,14 @@
     "packrat/desc/stringr": {
       "checksum": "eab92d1eca86a5f575ee23cdebd6e70f"
     },
-    "packrat/desc/sys": {
-      "checksum": "c150e1320b344b91edd18d72fc260116"
-    },
     "packrat/desc/xtable": {
       "checksum": "526e6f7be3cf3228226e3aab27258be6"
     },
-    "packrat/desc/yaml": {
-      "checksum": "a5c8026f8dbd6fdbfb913829911a4ed8"
-    },
     "packrat/packrat.lock": {
-      "checksum": "0ce77404d698c6861ed92789805f8eaf"
+      "checksum": "db603bfb49dcb7900ac51b5105061a0c"
     },
     "README.md": {
       "checksum": "b56a940efcf4d0c88da8f2fe4fa1a913"
-    },
-    "test-deploy.R": {
-      "checksum": "88c7c651b33d05b28c6bde7aec74f372"
     }
   },
   "users": null
