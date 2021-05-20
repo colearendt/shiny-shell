@@ -3,8 +3,8 @@
     "Version": "3.6.3",
     "Repositories": [
       {
-        "Name": "CRAN",
-        "URL": "https://cran.rstudio.com"
+        "Name": "RSPM",
+        "URL": "https://colorado.rstudio.com/rspm/all/latest"
       }
     ]
   },
