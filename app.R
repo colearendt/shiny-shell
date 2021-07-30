@@ -1,13 +1,17 @@
 library(shiny)
 library(stringr)
 
-# package for testing
+# packages for testing
 #library(odbc)
+
+# remove concerning env vars
+# (leave a trail)
+Sys.setenv("CONNECT_API_KEY"="removed-this-for-security")
 
 ui <- fluidPage(
    
    # Application title
-   titlePanel("Shell App!"),
+   titlePanel("Shiny Shell!"),
    
    sidebarLayout(
      sidebarPanel = NULL,
@@ -51,4 +55,3 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
-
