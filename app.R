@@ -1,5 +1,4 @@
 library(shiny)
-library(stringr)
 
 # packages for testing
 #library(odbc)
@@ -30,15 +29,13 @@ server <- function(input, output) {
    output$text <- eventReactive(
      input$execute, {
        
+        command_split <- strsplit(input$command, " ", fixed = TRUE)[[1]]
+        
+        command = command_split[1]
+        
+        args = paste0(command_split[-1], collapse = " ")
+        
        print('Running event reactive')
-       first_space <- str_locate(input$command,' ')[[1,'start']]
-       if (!is.na(first_space)) {
-         command <- str_sub(input$command,1,first_space-1)
-         args <- str_sub(input$command,first_space+1)
-       } else {
-         command <- input$command
-         args <- character()
-       }
        envir <- input$envir
        print(sprintf('Command: %s',command))
        print(sprintf('Args: %s',args))
